@@ -264,7 +264,37 @@ Adding the following to your `composer.json` file:
 **\*Dark mode**: uncomment (line 19) `Telescope::night();` in file `app/Providers/TelescopeServiceProvider.php`.\*
 
 ---
+## 7. [Laravel NanoId](https://github.com/Parables/laravel-model-nanoid)
 
+```bash
+composer require parables/laravel-model-nanoid
+````
+### Use NanoId as primary key
+
+If you choose to use a NanoID as your primary model key (id), then use GeneratesNanoIdAsPrimaryKey trait on your model.
+```php
+<?php
+
+namespace App;
+
+use Parables\NanoId\GeneratesNanoIdAsPrimaryKey;
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model
+{
+    use GeneratesNanoIdAsPrimaryKey;
+}
+```
+### And update your migrations
+
+```diff
+Schema::create('users', function (Blueprint $table) {
+-     $table->id();
++     $table->string('id')->primary();
+ });
+```
+
+---
 ---
 
 ## Git Hooks
@@ -382,3 +412,4 @@ echo "$ISSUE_ID"': '$(cat "$1") > "$1"
 ```
 
 ---
+
