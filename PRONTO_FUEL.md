@@ -1,11 +1,4 @@
-# Setup de um Projeto Laravel usando o start kit Pronto_fuel
-
-## [Clonar o projeto](https://github.com/prontostack/pronto-fuel)
-
-```bash
-git clone https://github.com/prontostack/pronto-fuel.git ($pasta)
-```
-
+# Setup de um Projeto Laravel usando o start kit [Pronto_fuel](https://github.com/prontostack/pronto-fuel)
 
 **Pronto** Fuel is a heavilly opnionated starter kit for [**Laravel**](https://laravel.com/) and [**Inertia.js**](https://inertiajs.com/) powered by [**Vite**](https://vitejs.dev/). It ships with autoimporting features and leverages the latest and greatest features from [**Vue 3**](https://vuejs.org/).
 
@@ -26,11 +19,12 @@ git clone https://github.com/prontostack/pronto-fuel.git ($pasta)
 -   🪲 Debug with [Ray](https://spatie.be/docs/ray/v1/introduction) on [port 23517](http://localhost:23517/) by default
 -   👮 Enforce code quality with [ESLint](https://eslint.org/) and [StandardJS](https://standardjs.com/)
 
+
 ## Quick Start
 
 ```bash
 # Clone the repo
-git clone git@github.com:prontostack/pronto-fuel.git my-app
+git clone https://github.com/prontostack/pronto-fuel.git my-app
 
 # Enter the project directory
 cd my-app
@@ -60,7 +54,7 @@ npm run serve
 
 ```bash
 # Clone the repo
-git clone git@github.com:prontostack/pronto-fuel.git my-app
+git clone https://github.com/prontostack/pronto-fuel.git my-app
 
 # Enter the project directory
 cd my-app
