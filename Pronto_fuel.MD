@@ -104,3 +104,5 @@ npm start
 
 # Go to http://localhost
 ```
+
+## Instalar dependencias e configurar de acordo com o Readme.md
